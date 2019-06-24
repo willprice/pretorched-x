@@ -1,4 +1,4 @@
-dependencies = ['torch', 'pretorched', 'torchvision', 'torchaudio']
+dependencies = ['torch', 'pretorched', 'torchvision']
 import pretorched
 
 
