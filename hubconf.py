@@ -2,7 +2,7 @@ dependencies = ['torch', 'pretorched', 'torchvision']
 import pretorched
 
 
-def resneti3d50(num_classes: int = 400, pretrained: str = 'moments', *args, **kwargs):
+def resneti3d50(num_classes: int = 339, pretrained: str = 'moments', *args, **kwargs):
     """
     Args:
         num_classes: Number of classes of classification layer
