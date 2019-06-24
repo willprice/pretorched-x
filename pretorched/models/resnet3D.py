@@ -312,7 +312,7 @@ def resneti3d50(num_classes=400, pretrained='moments', **kwargs):
     """Constructs a ResNet3D-50 model."""
     model = ResNet3D(Bottleneck, [3, 4, 6, 3], num_classes=num_classes, **kwargs)
     if pretrained is not None:
-        settings = torchvision_models.pretrained_settings['resnet50'][pretrained]
+        settings = pretrained_settings['resnet50'][pretrained]
         model = inflate_pretrained(model, num_classes, settings)
     model = modify_resnets(model)
     return model
